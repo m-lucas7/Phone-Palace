@@ -1,4 +1,5 @@
 # Phone Palace
+
 Membres du groupe :
 
 - MONIEZ Lucas
@@ -7,13 +8,14 @@ Membres du groupe :
 - DIEU Timothé
 
 # Tâches à réaliser
+
 Création d'une API pour afficher les différents produits sur notre futur site web.
 L'utilisateur peut consulter une liste de produits.
 
 - L'utilisateur peut ajouter un produit au panier.
 - L'utilisateur peut payer son panier en indiquant son adresse de livraison.
 - L'administrateur doit pouvoir consulter les dernières commandes.
-- L'objectif principal est de garantir un code maintenable pour cette nouvelle application. 
+- L'objectif principal est de garantir un code maintenable pour cette nouvelle application.
 
 Chaque PR doit également déclencher l'exécution de tests de non-régression.
 
@@ -25,6 +27,7 @@ npm install axios
 npm install express
 
 # Création de l'API
+
 Pour créer notre API, nous avons dû installer toutes les dépendances afin de pouvoir faire fonctionner l'API.
 Nous commençons par faire un "npm init -y".
 Puis nous installons toutes les dépendances grâce à la commande "npm i express dotenv mongoose nodemon".
@@ -49,12 +52,23 @@ Je vais utiliser l'application Postman (https://www.postman.com/) afin de vérif
 
 Nous allons mettre en place les routes de l'API.
 
-Pour effectuer ceci nous allons le faire grâce à un Rooter qui nous permets de communiquer entre le serveur et les routes.
-Nous avons dopnc créer un fichier "post.routes.js" qui nous permet d'envoyer des données au Rooter.
-Nous avons ensuite récupérer les données du Rooter dans le serveur grâce à "app.use ("post", require("./routes/post.routes"));"
+Pour effectuer ceci, nous allons le faire grâce à un Router qui nous permet de communiquer entre le serveur et les routes.
+Nous avons donc créé un fichier "post.routes.js" qui nous permet d'envoyer des données au Router.
+Nous avons ensuite récupéré les données du Router dans le serveur grâce à "app.use ("post", require("./routes/post.routes"));"
+
+Nous avons ajouté la possibilité d'être mis au courant quand un nouveau téléphone est supprimé ou ajouté.
+Tout cela en récupérant un ID pour être précis dans nos utilisations.
+
+# Instalation de la Base de Donnée
+
+Pour utiliser une base de données dans notre API, nous allons utiliser MySQL. Nous allons utiliser la commande suivante
+- npm install mysql
+Il faut veiller à avoir une base de données interne à notre machine, ici, nous allons utiliser XAMPP (https://sourceforge.net/projects/xampp/)
 
 # Démarrer l'API
+
 En premier lieu, il faut se rendre dans le dossier de l'API :
+
 - cd api/
-Ensuite, nous allons donc la démarrer grâce à la commande :
+  Ensuite, nous allons donc la démarrer grâce à la commande :
 - npm start
