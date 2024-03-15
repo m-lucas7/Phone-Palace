@@ -45,7 +45,13 @@ Ensuite, nous allons faire en sorte de définir un port pour notre serveur, ici 
 
 Je vais utiliser l'application Postman (https://www.postman.com/) afin de vérifier si tous mes envois vers le serveur sont corrects et fonctionnels.
 
-## 
+## Création des routes
+
+Nous allons mettre en place les routes de l'API.
+
+Pour effectuer ceci nous allons le faire grâce à un Rooter qui nous permets de communiquer entre le serveur et les routes.
+Nous avons dopnc créer un fichier "post.routes.js" qui nous permet d'envoyer des données au Rooter.
+Nous avons ensuite récupérer les données du Rooter dans le serveur grâce à "app.use ("post", require("./routes/post.routes"));"
 
 # Démarrer l'API
 En premier lieu, il faut se rendre dans le dossier de l'API :
