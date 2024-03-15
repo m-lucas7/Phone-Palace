@@ -21,10 +21,10 @@ Chaque PR doit également déclencher l'exécution de tests de non-régression.
 
 # Pour utiliser le projet
 
-cd site/
-npm install
-npm install axios
-npm install express
+- cd site/
+- npm install
+- npm install axios
+- npm install express
 
 # Création de l'API
 
@@ -61,9 +61,14 @@ Tout cela en récupérant un ID pour être précis dans nos utilisations.
 
 # Instalation de la Base de Donnée
 
-Pour utiliser une base de données dans notre API, nous allons utiliser MySQL. Nous allons utiliser la commande suivante
-- npm install mysql
-Il faut veiller à avoir une base de données interne à notre machine, ici, nous allons utiliser XAMPP (https://sourceforge.net/projects/xampp/)
+Pour utiliser une base de données dans notre API, nous allons utiliser MySQL. Nous allons utiliser la commande suivante,
+
+- npm install mysql;
+
+Il faut veiller à avoir une base de données interne sur notre machine. Ici, nous allons utiliser XAMPP (https://sourceforge.net/projects/xampp/).
+
+Une fois la base de données créée, nous allons récupérer les informations de la base de données dans le fichier server.js.
+Nous remplissons notre base de données avec les informations de 5 téléphones. Nous créons également une table admin, où se trouveront toutes les informations de connexion de nos administrateurs sur notre site. Une fois ceci effectué, notre base de données est prête, et nous pouvons la relier à notre site Phone Palace.
 
 # Démarrer l'API
 

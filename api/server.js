@@ -1,5 +1,4 @@
 const express = require('express');
-const port = 3000;
 
 const app = express();
 
@@ -7,9 +6,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use("/post", require ("./routes/post.routes"));
+app.use("/post", require("./routes/post.routes"));
+app.use(express.static('public'))
 
 // Lancer le serveur
-app.listen(port, () => {
-  console.log(`Le serveur est démarré sur le port : ` + port);
+app.listen(3000, () => {
+  console.log(`Le serveur est démarré sur le port : 3000`);
 });
