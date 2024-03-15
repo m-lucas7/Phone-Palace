@@ -15,3 +15,10 @@ L'utilisateur peut consulter une liste de produits.
 
 L'objectif principal est de garantir un code maintenable pour cette nouvelle application. Chaque
 PR doit également déclencher l'exécution de tests de non-régression.
+
+# Pour utiliser le projet :
+
+- cd site
+- npm install
+- npm install axios
+- npm install express
