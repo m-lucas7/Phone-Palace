@@ -1,13 +1,12 @@
-// Home.js
 import React from "react";
 
-function Home() {
+function Article() {
   return (
     <div>
       <h2>Home</h2>
-      <p>Welcome to our store!</p>
+      <p>Welcome to our article</p>
     </div>
   );
 }
 
-export default Home;
+export default Article;
