@@ -1,7 +1,7 @@
 // Navbar.js
 import { Outlet, Link } from "react-router-dom";
 import React from "react";
-import "../src/App.css"; 
+import "../src/App.css";
 
 const Navbar = () => {
   return (
@@ -16,6 +16,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/panier">Panier</Link>
+          </li>
+          <li>
+            <Link to="/admin">Admin</Link>
           </li>
         </ul>
       </nav>
