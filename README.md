@@ -1,10 +1,10 @@
 # Leroy-Merlin
 Membres du groupe :
 
-MONIEZ Lucas
-MAES Baptiste
-SAINDRENAN Jean
-DIEU Timoté
+- MONIEZ Lucas
+- MAES Baptiste
+- SAINDRENAN Jean
+- DIEU Timoté
 
 # Taches à réaliser :
 
