@@ -1,7 +1,7 @@
 // Navbar.js
 import { Outlet, Link } from "react-router-dom";
 import React from "react";
-//import "../public/app.css"; 
+import "../src/App.css"; 
 
 const Navbar = () => {
   return (
