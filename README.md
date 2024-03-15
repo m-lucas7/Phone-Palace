@@ -6,7 +6,7 @@ Membres du groupe :
 - SAINDRENAN Jean
 - DIEU Timothé
 
-# Tâches à réaliser :
+# Tâches à réaliser
 Création d'une API pour afficher les différents produits sur notre futur site web.
 L'utilisateur peut consulter une liste de produits.
 
@@ -17,7 +17,7 @@ L'utilisateur peut consulter une liste de produits.
 
 Chaque PR doit également déclencher l'exécution de tests de non-régression.
 
-# Pour utiliser le projet :
+# Pour utiliser le projet
 
 cd site/
 npm install
@@ -44,6 +44,8 @@ Ensuite, nous allons faire un "const app = express();" qui signifie que nous all
 Ensuite, nous allons faire en sorte de définir un port pour notre serveur, ici nous mettrons le port "3000".
 
 Je vais utiliser l'application Postman (https://www.postman.com/) afin de vérifier si tous mes envois vers le serveur sont corrects et fonctionnels.
+
+## 
 
 # Démarrer l'API
 En premier lieu, il faut se rendre dans le dossier de l'API :
