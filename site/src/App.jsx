@@ -7,6 +7,7 @@ import Navbar from "../components/navBar";
 import Home from "../components/home";
 import Panier from "../components/panier";
 import Article from "../components/article";
+import Admin from "../components/admin";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="article" element={<Article />} />
           <Route path="panier" element={<Panier />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
     </Router>
