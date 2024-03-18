@@ -33,6 +33,7 @@ function Article() {
   return (
 <<<<<<< Updated upstream
     <div>
+<<<<<<< Updated upstream
       <h2>Home</h2>
       <p>Welcome to our article</p>
 =======
@@ -58,6 +59,10 @@ function Article() {
       ) : (
         <p>Chargement des données...</p>
       )}
+>>>>>>> Stashed changes
+=======
+      <h2>La liste de tous les Téléphones</h2>
+      <p></p>
 >>>>>>> Stashed changes
     </div>
   );
