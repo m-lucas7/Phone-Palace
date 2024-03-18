@@ -18,6 +18,7 @@ function App() {
           <Route path="article" element={<Article />} />
           <Route path="panier" element={<Panier />} />
           <Route path="admin" element={<Admin />} />
+          
         </Route>
       </Routes>
     </Router>
