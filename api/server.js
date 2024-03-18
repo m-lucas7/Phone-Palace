@@ -1,12 +1,15 @@
 const express = require('express');
-const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Chargement des données...' });
-})
+// Midleware qui permet de traiter les données POST
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-app.listen(port, () => {
-  console.log(`Le serveur est ouvert sur le port : ${port}`);
-})
+app.use("/post", require("./routes/post.routes"));
+app.use(express.static('public'))
+
+// Lancer le serveur
+app.listen(3000, () => {
+  console.log(`Le serveur est démarré sur le port : 3000`);
+});
