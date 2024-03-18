@@ -1,15 +1,9 @@
-<<<<<<< Updated upstream
-import React from "react";
-=======
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { useCart } from 'react-use-cart'; // Importez useCart depuis react-use-cart
-import { CartProvider } from 'react-use-cart';
 
 const Article = () => {
   const [printsData, setPrintsData] = useState(null);
-  const { addItem } = useCart(); // Obtenez la fonction addItem de useCart
-console.log(addItem);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -24,19 +18,10 @@ console.log(addItem);
   }, []);
 
   const handleAddToCart = (print) => {
-    console.log(addItem);
     addItem(print);
   };
->>>>>>> Stashed changes
 
-function Article() {
   return (
-<<<<<<< Updated upstream
-    <div>
-<<<<<<< Updated upstream
-      <h2>Home</h2>
-      <p>Welcome to our article</p>
-=======
     <div className="centered-container">
       {printsData ? (
         <div className="centered-content">
@@ -46,7 +31,7 @@ function Article() {
               <p>Titre: {print.name}</p>
               <p>Description: {print.descr}</p>
               <a href={`detail/${print.id}`} target="_blank">
-                <img src={print.image}  />
+                <img src={print.image} alt="" />
               </a>
               <p>Prix: {print.price} €</p>
               <button onClick={() => handleAddToCart(print)}>Ajouter au panier</button>
@@ -59,13 +44,8 @@ function Article() {
       ) : (
         <p>Chargement des données...</p>
       )}
->>>>>>> Stashed changes
-=======
-      <h2>La liste de tous les Téléphones</h2>
-      <p></p>
->>>>>>> Stashed changes
     </div>
   );
-}
+};
 
 export default Article;
