@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors')
 
 const app = express();
 
@@ -7,6 +8,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/post", require("./routes/post.routes"));
 app.use(express.static('public'))
+
+app.use(cors())
 
 app.post('/login', (req, res) => {
   const { mail, password } = req.body;
