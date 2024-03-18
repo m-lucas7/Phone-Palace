@@ -15,8 +15,8 @@ app.get("/", (req, res) => {
   res.status(200).send("OK");
 });
 
-app.listen(3000, () => {
-  console.log(`Le serveur est démarré sur le port : 3000`);
-});
+// app.listen(3000, () => {
+//   console.log(`Le serveur est démarré sur le port : 3000`);
+// });
 
 module.exports = app;
