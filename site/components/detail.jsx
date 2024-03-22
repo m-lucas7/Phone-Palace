@@ -20,7 +20,7 @@ const Detail = () => {
   }, [id]);
 
   if (!print) {
-    return <p>Chargement des détails du produit...</p>;
+    return <p>Chargement des détails du produit..</p>;
   }
 
   return (
