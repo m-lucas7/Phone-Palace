@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios"; // Assurez-vous d'avoir installé Axios dans votre projet
-
+import { Outlet, Link, useNavigate } from "react-router-dom";
 function Admin({ onLogin }) {
   const [mail, setmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -14,10 +14,11 @@ function Admin({ onLogin }) {
         password,
       });
       // Gérer la réponse de l'API backend
-      console.log("Réponse de l'API:", response.data);
+      console.log("Réponse de l'API:", response, response.data);
       // Appeler la fonction de gestion de connexion parente si la connexion est réussie
-      if (response.data.success) {
-        onLogin(mail, password);
+      if (response.status === 200) {
+        navigate("/");
+        //onLogin(mail, password);
       }
     } catch (error) {
       console.error("Erreur lors de la connexion:", error);
@@ -48,10 +49,9 @@ function Admin({ onLogin }) {
             required
           />
         </div>
-        <button type="submit">Se connecter</button>
+        <button type="submit">se connecter </button>
       </form>
     </div>
   );
 }
-
 export default Admin;
