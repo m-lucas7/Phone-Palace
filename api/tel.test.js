@@ -1,7 +1,4 @@
 const request = require('supertest');
-const app = require('./server');
-
-jest.mock('supertest');
 
 test('Vérifier l\'affichage des informations de la table telephones', async () => {
     const mockResponse = [
@@ -18,6 +15,7 @@ test('Vérifier l\'affichage des informations de la table telephones', async () 
 
     const response = await request('http://localhost:3000').get('/post');
     expect(response.status).toBe(200);
+
     expect(response.body).toHaveLength(5);
     expect(response.body[0].name).toBe('iPhone 13 Pro Max');
     expect(response.body[0].price).toBe(1259);
